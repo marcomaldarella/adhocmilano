@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Hoc - Show</title>
+    <meta name="theme-color" content="#073DA5">
+    <meta name="description" content="Un servizio sartoriale veloce ed innovativo. Direttamente a casa tua, o dovunque tu voglia.">
+    <meta name="keywords" content="Sartoria su misura Milano direttamente a casa tua">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css"/>
+    <link rel="icon" type="image/png" href="src/favicon.png"/>
+</head>
+<body>
+
+    <div class="cursor"></div>
+    
+    <div class="left-back-button"><a href="index.html">Back</a></div>
+    
+    <div id="video-background" class="video-background">
+        <a href="javascript:void()" class="button-play" id="playvideo" onclick="startVideo(0)">Play Video</a>
+        <div class="plyr__video-embed" id="player" style="display: none; width: 100vw;">
+            <iframe
+            src="https://player.vimeo.com/video/563148008?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+            allowfullscreen
+            allowtransparency
+            allow="autoplay"
+            ></iframe>
+        </div>
+    </div> 
+    
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+    <script>
+        const player = new Plyr('#player');
+        //document.getElementById('player').style.display = "none";
+        function startVideo() {
+            document.getElementById('player').style.display = "block";
+            player.play();
+            document.getElementById('playvideo').style.display = "none";
+        }
+
+
+        (function() {
+
+          const link = document.querySelectorAll('nav> .hover-this');
+
+          const allLinks = document.querySelectorAll('a');
+
+
+          const cursor = document.querySelector('.cursor');
+
+          const mouseHoverEffect = function(e) {
+              cursor.style.opacity = 0.3;
+              cursor.style.padding = '1.2em';
+          }
+          const mouseExitEffect = function(e) {
+            cursor.style.opacity = 1;
+            cursor.style.padding = '0.3em';
+          }
+
+            const animateit = function (e) {
+                const span = this.querySelector('span');
+                const { offsetX: x, offsetY: y } = e,
+                { offsetWidth: width, offsetHeight: height } = this,
+
+                move = 25,
+                xMove = x / width * (move * 2) - move,
+                yMove = y / height * (move * 2) - move;
+
+                span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+                if (e.type === 'mouseleave') span.style.transform = '';
+            };
+
+            const editCursor = e => {
+                    const { clientX: x, clientY: y } = e;
+                    cursor.style.left = x + 'px';
+                    cursor.style.top = y + 'px';
+            };
+
+            link.forEach(b => b.addEventListener('mousemove', animateit));
+            link.forEach(b => b.addEventListener('mouseleave', animateit));
+
+            allLinks.forEach(l => l.addEventListener('mouseenter', mouseHoverEffect))
+            allLinks.forEach(l => l.addEventListener('mouseleave', mouseExitEffect))
+
+            window.addEventListener('mousemove', editCursor);
+        })(); 
+
+    </script>
+</body>
+</html>
