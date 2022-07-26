@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="it">
+</html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdHoc Milano</title>
+    <meta name="theme-color" content="#073DA5">
+    <meta name="description" content="Un servizio sartoriale veloce ed innovativo. Direttamente a casa tua, o dovunque tu voglia.">
+    <meta name="keywords" content="Sartoria su misura Milano direttamente a casa tua">
+    <link rel="icon" type="image/png" href="src/favicon.png" />
+    <meta property="og:image" content="https://adhocmilano.it/src/favicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="src/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon.png">
+    <style>
+
+        @font-face {
+            font-family: 'Brown-Light';
+            src: url("fonts/Brown-Light.otf");
+            src: url("fonts/Brown-Light.otf") format("opentype"), url("Brown-Light.woff2") format("woff2"), url("Brown-Light.woff") format("woff"), url("Brown-Light.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: 'Brown-Regular';
+            src: url("fonts/Brown-Regular.otf") format("opentype"), url("Brown-Regular.woff2") format("woff2"), url("Brown-Regular.woff") format("woff"), url("Brown-Regular.ttf") format("truetype");
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        @media only screen and (max-width: 10000px) and (min-width: 2501px) {
+            .container {
+                max-width: 1990px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 2500px) and (min-width: 2001px) {
+            .container {
+                max-width: 1800px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 2000px) and (min-width: 1601px) {
+            .container {
+                max-width: 1440px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 1600px) and (min-width: 1401px) {
+            .container {
+                max-width: 1300px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 1400px) and (min-width: 1251px) {
+            .container {
+                max-width: 1200px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 1250px) and (min-width: 1101px) {
+            .container {
+                max-width: 1050px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 1100px) and (min-width: 992px) {
+            .container {
+                max-width: 950px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media all and (max-width:991px) {
+            .flexBoxThree {
+                flex-direction: column !important;
+            }
+
+            .product-item {
+                width: 100% !important;
+                padding-right: 0 !important;
+            }
+
+            .product-item-img {
+                width: 100% !important;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .pc {
+                display: none;
+            }
+
+            .product-item-text .product-heading {
+                font-size: 35px !important;
+                line-height: 40px !important;
+            }
+
+            .product-item-text .product-details-text {
+                font-size: 12px !important;
+                line-height: 20px !important;
+                padding-bottom: 49px !important;
+            }
+
+            .product-item-img .product-details-text {
+                font-size: 12px !important;
+                line-height: 20px !important;
+            }
+
+            .product-item-text .product-heading-two {
+                font-size: 35px !important;
+                line-height: 80px !important;
+            }
+
+            .main-product-section {
+                margin-top: 0px !important;
+            }
+
+            .product-item {
+                padding-left: 0 !important;
+            }
+
+            .main-product-section {
+                padding: 0px 5% !important;
+            }
+
+            .product-heading-two.text-aling {
+                padding-bottom: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="splash" id="splash">
+        <img src="src/caption-overlay-01.svg">
+    </div>
+    <div id="restOfThePage" style="display: none">
+        <div class="cursor"></div>
+        <div class="top">
+            <a href="index.html"><img class="logo logotohide" src="src/adhoc.svg" alt="logo-adhoc"></a>
+            <img class="logo hide logotohide white-logo" src="src/ad-hoc-logowhite.svg" alt="logo-adhoc-white">
+            <div class="your-personal change-color">PRODUCTS</div>
+        </div>
+        <!--====================Start Product Section====================-->
+        <section class="main-product-section">
+            <div class="container" style="max-width: 1200px; width: 100%; margin: 0 auto;">
+                <!--Copy item-->
+                <div class="row flexBoxThree" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <!--Product Item-->
+                    <div class="product-item custom-padding" style="width: 60%; padding-right: 15%;">
+                        <!--Product Details Text-->
+                        <div class="product-item-text">
+                            <h1 class="product-heading-two" style="padding-bottom: 20px; margin-top:120px; font-size: 59px; color: #073DA5; margin-top: 100ox;">Abito & Giacca</h1>
+                            <p class="product-details-text" style="font-size: 18px; line-height: 26px; color: #073DA5; padding-bottom: 49px; font-family: 'Brown-Regular';">Ogni abito è full canvas e realizzato secondo i massimi standard dell’artigianato, con un’attenzione assoluta per i dettagli, dalla presa misure alla consegna. Ci affidiamo ai migliori partner e scegliamo tessuti italiani, collaborando con fornitori di qualità che ci garantiscono un capo sartoriale eccellente.
+                            </p>
+                        </div>
+                        <!--/// End Product Details Text-->
+                    </div>
+                    <!--/// End Product Item-->
+                    <!--Product item Image-->
+                    <div class="product-item-img" style="width: 40%;">
+                        <img class="custom-product-size" src="img/5485-5481-5470-revers@1x.png" style="width: 100%;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                </div>
+                <!--///End Copy item-->
+            </div>
+        </section>
+        <!--====================End Product Section====================-->
+        <!--====================Start Product Section====================-->
+        <section class="main-product-section">
+            <div class="container" style="max-width: 1200px; width: 100%; margin: 0 auto;">
+                <!--Copy item-->
+                <div class="row flexBoxThree" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <!--Product item Image-->
+                    <div class="product-item-img custom-margin pc" style="width: 40%; margin-top: -120px;">
+                        <img class="custom-product-size" src="img/sh00243-sh00244-sh00245@1x.png" style="width: 100%;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                    <!--Product Item-->
+                    <div class="product-item" style="width: 60%; padding-left: 15%;">
+                        <!--Product Details Text-->
+                        <div class="product-item-text">
+                            <h1 class="product-heading-two text-aling" style="padding-bottom: 20px; margin-bottom:0px; font-size: 59px; color: #073DA5; font-weight: 400;">Camicia</h1>
+                            <p class="product-details-text" style="font-size: 18px; line-height: 26px; color: #073DA5; font-weight: 400; padding-bottom: 49px; font-family: 'Brown-Regular';">Personalizzare la camicia significa prima di tutto realizzarla su misura, per garantirti una vestibilità perfetta qualunque sia la tua corporatura. Diamo massima espressione al tuo stile, offrendoti la possibilità di scegliere modello, collo, polsino, fino alla posizione e colore delle cifre e il colore delle asole.
+                            </p>
+                        </div>
+                        <!--/// End Product Details Text-->
+                    </div>
+                    <!--/// End Product Item-->
+                    <!--Product item Image-->
+                    <div class="product-item-img custom-margin mobile">
+                        <img class="custom-product-size" src="img/sh00243-sh00244-sh00245@1x.png" style="width: 100%;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                </div>
+                <!--///End Copy item-->
+            </div>
+        </section>
+        <!--====================End Product Section====================-->
+        <!--====================Start Product Section====================-->
+        <section class="main-product-section" style="margin-top: 120px;">
+            <div class="container" style="max-width: 1200px; width: 100%; margin: 0 auto;">
+                <!--Copy item-->
+                <div class="row flexBoxThree" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <!--Product Item-->
+                    <div class="product-item custom-padding" style="width: 60%; padding-right: 15%;">
+                        <!--Product Details Text-->
+                        <div class="product-item-text">
+                            <h1 class="product-heading-two" style="padding-bottom: 20px; font-size: 59px; color: #073DA5; font-weight: 400; margin-bottom:0px;">Trench</h1>
+                            <p class="product-details-text" style="font-size: 18px; line-height: 26px; color: #073DA5; font-weight: 400; padding-bottom: 49px; font-family: 'Brown-Regular';">Il soprabito di mezza stagione per eccellenza, ad hoc per te.
+                                Offriamo un’ampia possibilità di scelta di tessuti, tutti waterproof e windproof, declinati nei pesi di stagione. Potrai scegliere il modello, con o senza imbottitura estraibile e/o cappuccio, dalle tasche fino alla chiusura (full zip, bottoni).
+                            </p>
+                        </div>
+                        <!--/// End Product Details Text-->
+                    </div>
+                    <!--/// End Product Item-->
+                    <!--Product item Image-->
+                    <div class="product-item-img" style="width: 40%;">
+                        <img class="custom-product-size" src="img/02-adhoc.jpeg" style="width: 100%;  height: 100%;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                </div>
+                <!--///End Copy item-->
+            </div>
+        </section>
+        <!--====================End Product Section====================-->
+        <!--====================Start Product Section====================-->
+        <section class="main-product-section">
+            <div class="container" style="max-width: 1200px; width: 100%; margin: 0 auto;">
+                <!--Copy item-->
+                <div class="row flexBoxThree" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <!--Product item Image-->
+                    <div class="product-item-img custom-margin pc" style="width: 40%; margin-top: -120px;">
+                        <img class="custom-product-size" src="img/gruppo-di-maschere-4@1x.png" style="width: 100%;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                    <!--Product Item-->
+                    <div class="product-item" style="width: 60%; padding-left: 15%;">
+                        <!--Product Details Text-->
+                        <div class="product-item-text">
+                            <h1 class="product-heading-two text-aling" style="padding-bottom: 50px; font-size: 59px; line-height: 80px; color: #073DA5; font-weight: 400;">Maglieria</h1>
+                            <p class="product-details-text" style="font-size: 18px; line-height: 26px; color: #073DA5; font-weight: 400; padding-bottom: 49px; font-family: 'Brown-Regular';">Puoi personalizzare il tuo capo di maglieria fino ai minimi dettagli.
+                                Dal filato alle opzioni di contrasto, dal modello alla tipologia di collo e manica, fino al monogramma.
+                            </p>
+                        </div>
+                        <!--/// End Product Details Text-->
+                    </div>
+                    <!--/// End Product Item-->
+                    <!--Product item Image-->
+                    <div class="product-item-img custom-margin mobile">
+                        <img class="custom-product-size" src="img/gruppo-di-maschere-4@1x.png" style="width: 100%; height: 100%;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                </div>
+                <!--///End Copy item-->
+            </div>
+        </section>
+        <!--====================End Product Section====================-->
+        <!--====================Start Product Section====================-->
+        <section class="main-product-section" style="margin-top: 120px;">
+            <div class="container" style="max-width: 1200px; width: 100%; margin: 0 auto;">
+                <!--Copy item-->
+                <div class="row flexBoxThree" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <!--Product Item-->
+                    <div class="product-item custom-padding" style="width: 60%; padding-right: 15%;">
+                        <!--Product Details Text-->
+                        <div class="product-item-text">
+                            <h1 class="product-heading-two" style="padding-bottom: 50px; font-size: 59px; line-height: 80px; color: #073DA5; font-weight: 400;">Chinos</h1>
+                            <p class="product-details-text" style="font-size: 18px; line-height: 26px; color: #073DA5; font-weight: 400; padding-bottom: 49px; font-family: 'Brown-Regular';">Il tuo pantalone preferito nei tessuti di stagione. Vestibilità, pinces, tasche, larghezza fondo, cucitura: sono solo alcune delle caratteristiche che potrai scegliere per renderlo unico.
+                            </p>
+                        </div>
+                        <!--/// End Product Details Text-->
+                    </div>
+                    <!--/// End Product Item-->
+                    <!--Product item Image-->
+                    <div class="product-item-img" style="width: 40%;">
+                        <img class="custom-product-size" src="img/chino-rek-new2@1x.png" style="width: 100%; height: 550px;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                </div>
+                <!--///End Copy item-->
+            </div>
+        </section>
+        <!--====================End Product Section====================-->
+        <!--====================Start Product Section====================-->
+        <section class="main-product-section">
+            <div class="container" style="max-width: 1200px; width: 100%; margin: 0 auto;">
+                <!--Copy item-->
+                <div class="row flexBoxThree" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <!--Product item Image-->
+                    <div class="product-item-img custom-margin pc" style="width: 40%; margin-top: -120px;">
+                        <img class="custom-product-size" src="img/schermata-2022-06-16-alle-11-27-39@1x.png" style="width: 100%; height: 550px;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                    <!--Product Item-->
+                    <div class="product-item" style="width: 60%; padding-left: 15%;">
+                        <!--Product Details Text-->
+                        <div class="product-item-text">
+                            <h1 class="product-heading-two text-aling" style="padding-bottom: 50px; font-size: 59px; line-height: 80px; color: #073DA5; font-weight: 400;">Jeans</h1>
+                            <p class="product-details-text" style="font-size: 18px; line-height: 26px; color: #073DA5; font-weight: 400; padding-bottom: 49px; font-family: 'Brown-Regular';">Trovare il modello di pantaloni in denim perfetto è un’impresa alquanto ardua. Ecco perché offriamo un servizio di personalizzazione che spazia dal lavaggio fino alla scelta dei rivetti.
+                            </p>
+                        </div>
+                        <!--/// End Product Details Text-->
+                    </div>
+                    <!--/// End Product Item-->
+                    <!--Product item Image-->
+                    <div class="product-item-img custom-margin mobile">
+                        <img class="custom-product-size" src="img/schermata-2022-06-16-alle-11-27-39@1x.png" style="width: 100%; height: 550px;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                </div>
+                <!--///End Copy item-->
+            </div>
+        </section>
+        <!--====================End Product Section====================-->
+        <div class="facebook-instagram">
+            <a class="change-color" href="about.html" target="_blank">ABOUT</a>
+        </div>
+        <div class="mail">
+            <a class="change-color" href="contact.html">CONTACTS</a>
+        </div>
+    </div>
+    <script>
+        function overlayer() {
+            var x = window.matchMedia("(max-width: 768px)");
+            if (!x.matches) { // If media query matches
+                Array.prototype.forEach.call(document.getElementsByClassName('change-color'), element => {
+                    element.classList.toggle('black-text');
+                });
+                Array.prototype.forEach.call(document.getElementsByClassName('logotohide'), element => {
+                    element.classList.toggle('hide');
+                });
+                document.getElementsByTagName('body')[0].classList.toggle('background-blue');
+                document.getElementById('hero').classList.toggle('background-blue');
+            }
+        }
+        (function() {
+            const link = document.querySelectorAll('nav> .hover-this');
+            const allLinks = document.querySelectorAll('a');
+            const cursor = document.querySelector('.cursor');
+            const mouseHoverEffect = function(e) {
+                cursor.style.opacity = 0.3;
+                cursor.style.padding = '1.2em';
+            }
+            const mouseExitEffect = function(e) {
+                cursor.style.opacity = 1;
+                cursor.style.padding = '0.3em';
+            }
+            const animateit = function(e) {
+                const span = this.querySelector('span');
+                const {
+                    offsetX: x,
+                    offsetY: y
+                } = e, {
+                    offsetWidth: width,
+                    offsetHeight: height
+                } = this,
+                move = 25,
+                    xMove = x / width * (move * 2) - move,
+                    yMove = y / height * (move * 2) - move;
+                span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+                if (e.type === 'mouseleave') span.style.transform = '';
+            };
+            const editCursor = e => {
+                const {
+                    clientX: x,
+                    clientY: y
+                } = e;
+                cursor.style.left = x + 'px';
+                cursor.style.top = y + 'px';
+            };
+            link.forEach(b => b.addEventListener('mousemove', animateit));
+            link.forEach(b => b.addEventListener('mouseleave', animateit));
+            allLinks.forEach(l => l.addEventListener('mouseenter', mouseHoverEffect))
+            allLinks.forEach(l => l.addEventListener('mouseleave', mouseExitEffect))
+            window.addEventListener('mousemove', editCursor);
+        })();
+
+        function splasher() {
+            document.getElementById('splash').style.display = "none";
+            document.getElementById('restOfThePage').style.display = "block";
+        }
+        window.addEventListener('load', (event) => {
+            setTimeout(function() {
+                /*setTimeout(function(){ 
+                    splasher();
+                }, 1500);
+                document.getElementById('splash').classList.add('translator-splash');*/
+                splasher();
+            }, 1900);
+        });
+    </script>
+</body></html>

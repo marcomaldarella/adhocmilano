@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="it">
+</html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdHoc Milano</title>
+    <meta name="theme-color" content="#073DA5">
+    <meta name="description" content="Un servizio sartoriale veloce ed innovativo. Direttamente a casa tua, o dovunque tu voglia.">
+    <meta name="keywords" content="Sartoria su misura Milano direttamente a casa tua">
+    <link rel="icon" type="image/png" href="src/favicon.png" />
+    <meta property="og:image" content="https://adhocmilano.it/src/favicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="src/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="src/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon.png">
+    <style>
+
+        @font-face {
+            font-family: 'Brown-Light';
+            src: url("fonts/Brown-Light.otf");
+            src: url("fonts/Brown-Light.otf") format("opentype"), url("Brown-Light.woff2") format("woff2"), url("Brown-Light.woff") format("woff"), url("Brown-Light.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: 'Brown-Regular';
+            src: url("fonts/Brown-Regular.otf");
+            src: url("fonts/Brown-Regular.otf") format("opentype"), url("Brown-Regular.woff2") format("woff2"), url("Brown-Regular.woff") format("woff"), url("Brown-Regular.ttf") format("truetype");
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .col-2-img  {
+            max-width: 48%;
+        } 
+
+        .col-2-img-first {
+            max-width: 48%;
+            margin-right:15px;
+        } 
+
+        .main-product-section {
+            max-width: 100vw;
+            overflow-x: hidden!important;
+        }
+
+        .last-img {
+            padding-bottom:120px;
+        }
+
+        .main-customer-images {
+            padding-top:40px;
+        }
+
+        @media only screen and (max-width: 10000px) and (min-width: 2501px) {
+            .container {
+                max-width: 100vw;
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+        }
+
+        @media only screen and (max-width: 2500px) and (min-width: 2001px) {
+            .container {
+                max-width: 1800px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 2000px) and (min-width: 1601px) {
+            .container {
+                max-width: 1440px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 1600px) and (min-width: 1401px) {
+            .container {
+                max-width: 1300px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 1400px) and (min-width: 1251px) {
+            .container {
+                max-width: 1200px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 1250px) and (min-width: 1101px) {
+            .container {
+                max-width: 1050px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media only screen and (max-width: 1100px) and (min-width: 992px) {
+            .container {
+                max-width: 950px !important;
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding-right: 3% !important;
+                padding-left: 3% !important;
+            }
+        }
+
+        @media all and (max-width:991px) {
+
+            .main-customer-images {
+                padding-top:0px !important;
+            }
+
+            .last-img {
+                padding-left:5%;
+                padding-right:5%;
+                margin-bottom:100px;
+                padding-top:20px;
+            }
+
+            .product-item.custom-padding {
+                width: 100% !important;
+            }
+
+            .product-item-img {
+                width: 100% !important;
+            }
+
+            .flexBoxOne {
+                flex-direction: column;
+            }
+
+            .custom-product-size {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .product-item.second-item {
+                width: 100% !important;
+                padding-left: 0 !important;
+            }
+
+            .img-item {
+                width: 48% !important;
+                margin-top: 20px !important;
+            }
+
+            .flexBoxTwo {
+                flex-wrap: wrap !important;
+                padding-left: 20px;
+                padding-right: 18px;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .pc {
+                display: none;
+            }
+
+            .img-item img {
+                height: auto !important;
+            }
+
+            .product-img img {
+                height: auto !important;
+                width: 90% !important;
+            }
+
+            .product-item-text .product-heading {
+                font-size: 35px !important;
+                line-height: 40px !important;
+                margin-top:120px;
+            }
+
+            .product-item-text .product-details-text {
+                font-size: 12px !important;
+                line-height: 20px !important;
+                padding-bottom: 10px !important;
+            }
+
+            .product-item-img .product-details-text {
+                font-size: 12px !important;
+                line-height: 20px !important;
+            }
+
+            .product-item-text .product-heading-two {
+                font-size: 35px !important;
+                line-height: 80px !important;
+            }
+
+            .main-product-section {
+                margin-top: 0px !important;
+            }
+
+            .main-product-section {
+                padding: 0px 5% !important;
+            }
+
+            .col-2-img  {
+            width: 100%;
+            } 
+
+            .col-2-img-first {
+            width: 100%;
+            margin-right:0px;
+            } 
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="splash" id="splash">
+        <img src="src/caption-overlay-01.svg">
+    </div>
+    <div id="restOfThePage" style="display: none">
+        <div class="cursor"></div>
+        <div class="top">
+            <a href="index.html"><img class="logo logotohide" src="src/adhoc.svg" alt="logo-adhoc"></a>
+            <img class="logo hide logotohide white-logo" src="src/ad-hoc-logowhite.svg" alt="logo-adhoc-white">
+            <div class="your-personal change-color"><a href="products.html">PRODUCTS</a></div>
+        </div>
+        <!--=================Start Product Section==============-->
+        <section class="main-product-section" style="margin-top: 120px;">
+            <div class="container" style="max-width: 1200px; width: 100%; margin: 0 auto;">
+                <!--Copy item-->
+                <div class="row flexBoxOne" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <!--Product Item-->
+                    <div class="product-item custom-padding" style="width: 50%; padding-right: 10%;">
+                        <!--Product Details Text-->
+                        <div class="product-item-text">
+                            <h1 class="product-heading" style="padding-bottom: 20px;   font-size: 42px; line-height: 52px; color: #073DA5; font-weight: 300;">Personalizzazione, <br>cura dei dettagli, <br>qualità, unicità.</h1>
+                            <p class="product-details-text" style="font-size: 18px; line-height: 26px; color: #073DA5; font-family: Brown-Regular; padding-bottom: 49px;">Al centro di AdHoc Milano ci sono l’impegno e la consapevolezza di rappresentare le regole non scritte del menswear in un modo contemporaneo e vicino a chi lo indossa, con ricercatezza e stile.
+                                Un formalwear contemporaneo che si evolve a total look.
+                                Fatto su misura per te, come sta bene a te.
+                                Un servizio eccellente: pratico, semplice e altamente professionale.
+                            </p>
+                        </div>
+                        <!--/// End Product Details Text-->
+                    </div>
+                    <!--/// End Product Item-->
+                    <!--Product item Image-->
+                    <div class="product-item-img">
+                        <img class="custom-product-size" style="height: 550px; padding-right:0px;" src="img/about-1.png" style="width: 100%;" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                </div>
+                <!--///End Copy item-->
+            </div>
+        </section>
+        <!--====================End Product Section====================-->
+        <!--=================Start Product Section==============-->
+        <section class="main-product-section">
+            <div class="container" style="width: 100%; margin: 0 auto;">
+                <!--Copy item-->
+                <div class="row flexBoxOne" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <!--Product Item-->
+                    <!--Product item Image-->
+                    <div class="product-item-img" style="width: 40%;">
+                        <img class="custom-product-size pc" style="height: 550px;" src="img/380a4117@1x.png" alt="img">
+                        <p class="product-details-text" style="font-size: 18px; line-height: 26px; color: #073DA5; font-weight: 400; padding-bottom: 30px; padding-top: 60px; font-family: 'Brown-Regular';">AdHoc Milano è a portata di mano. Non rinunciare alla tua voglia di un capo su misura, ti garantiamo alta qualità al giusto prezzo e in circa 5 settimane potrai ricevere il tuo abito ovunque tu voglia.
+                        </p>
+                        <img class="custom-product-size mobile" style="width: 400px; height: 550px;" src="img/380a4117@1x.png" alt="img">
+                    </div>
+                    <!--/// End Product item Image-->
+                    <div class="product-item second-item" style="width: 60%; padding-left: 6%;">
+                        <!--Product Details Text-->
+                        <div class="product-item-text">
+                            <p class="product-details-text" style="font-size: 18px; line-height: 26px; color: #073DA5; font-weight: 400; padding-bottom: 20px; font-family: 'Brown-Regular';">Un’esperienza dedicata alle esigenze di chi vuole essere sempre impeccabile e ama custodire l’unicità del proprio stile, comodamente da casa o in ufficio. Consigliamo i capi e gli outfit più adatti alla tua personalità, ciò che ti veste davvero bene, e lo produciamo.
+                                Lo sappiamo fare perché lo facciamo da sempre, conosciamo i tagli, i tessuti, e le tendenze: un ensemble di comfort, agio e vestibilità.
+                            </p>
+                            <!--Product Image-->
+                            <div class="product-img" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap:wrap;">
+                                <img class="col-2-img-first" src="img/380a3992@1x.png"  alt="img">
+                                <img class="col-2-img" src="img/380a3756@1x.png"   alt="img">
+                            </div>
+                            <!--/// End Product Image-->
+                        </div>
+                        <!--/// End Product Details Text-->
+                    </div>
+                    <!--/// End Product Item-->
+                </div>
+                <!--///End Copy item-->
+            </div>
+        </section>
+        <!--====================End Product Section====================-->
+        <!--====================Start Customer Image Section====================-->
+        <section class="main-customer-images">
+            <div class="container">
+                <div class="row flexBoxTwo" style="display: flex; justify-content: space-between; align-items: center;">
+                    <!--img item-->
+                    <div class="img-item" style="width: 24%;">
+                        <img src="img/380a1807@1x.png" style="width: 98%;" alt="">
+                    </div>
+                    <!--/// End img item-->
+                    <!--img item-->
+                    <div class="img-item" style="width: 24%;">
+                        <img src="img/380a2965@1x.png" style="width: 98%;" alt="">
+                    </div>
+                    <!--/// End img item-->
+                    <!--img item-->
+                    <div class="img-item" style="width: 24%;">
+                        <img src="img/380a3391@1x.png" style="width: 98%;" alt="">
+                    </div>
+                    <!--/// End img item-->
+                    <!--img item-->
+                    <div class="img-item" style="width: 24%;">
+                        <img src="img/380a2269@1x.png" style="width: 98%;" alt="">
+                    </div>
+                    <!--/// End img item-->
+                </div>
+            </div>
+            <!--/// End Slider-->
+        </section>
+        <section class="main-customer-images">
+            <div class="container" style="width: 100%; margin: 0px;">
+                <!--img item-->
+                <div class="last-img">
+                    <img src="img/adhoc-duo.jpg" style="width: 100%; margin: 0px 0px;" alt="">
+                </div>
+                <!--/// End img item-->
+            </div>
+        </section>
+        <!--====================End Customer Image Section====================-->
+        <div class="facebook-instagram">
+            <a class="change-color" href="about.html" target="_blank">ABOUT</a>
+        </div>
+        <div class="mail">
+            <a class="change-color" href="contact.html">CONTACTS</a>
+        </div>
+    </div>
+    <script>
+        function overlayer() {
+            var x = window.matchMedia("(max-width: 768px)");
+            if (!x.matches) { // If media query matches
+                Array.prototype.forEach.call(document.getElementsByClassName('change-color'), element => {
+                    element.classList.toggle('black-text');
+                });
+                Array.prototype.forEach.call(document.getElementsByClassName('logotohide'), element => {
+                    element.classList.toggle('hide');
+                });
+                document.getElementsByTagName('body')[0].classList.toggle('background-blue');
+                document.getElementById('hero').classList.toggle('background-blue');
+            }
+        }
+        (function() {
+            const link = document.querySelectorAll('nav> .hover-this');
+            const allLinks = document.querySelectorAll('a');
+            const cursor = document.querySelector('.cursor');
+            const mouseHoverEffect = function(e) {
+                cursor.style.opacity = 0.3;
+                cursor.style.padding = '1.2em';
+            }
+            const mouseExitEffect = function(e) {
+                cursor.style.opacity = 1;
+                cursor.style.padding = '0.3em';
+            }
+            const animateit = function(e) {
+                const span = this.querySelector('span');
+                const {
+                    offsetX: x,
+                    offsetY: y
+                } = e, {
+                    offsetWidth: width,
+                    offsetHeight: height
+                } = this,
+                move = 25,
+                    xMove = x / width * (move * 2) - move,
+                    yMove = y / height * (move * 2) - move;
+                span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+                if (e.type === 'mouseleave') span.style.transform = '';
+            };
+            const editCursor = e => {
+                const {
+                    clientX: x,
+                    clientY: y
+                } = e;
+                cursor.style.left = x + 'px';
+                cursor.style.top = y + 'px';
+            };
+            link.forEach(b => b.addEventListener('mousemove', animateit));
+            link.forEach(b => b.addEventListener('mouseleave', animateit));
+            allLinks.forEach(l => l.addEventListener('mouseenter', mouseHoverEffect))
+            allLinks.forEach(l => l.addEventListener('mouseleave', mouseExitEffect))
+            window.addEventListener('mousemove', editCursor);
+        })();
+
+        function splasher() {
+            document.getElementById('splash').style.display = "none";
+            document.getElementById('restOfThePage').style.display = "block";
+        }
+        window.addEventListener('load', (event) => {
+            setTimeout(function() {
+                /*setTimeout(function(){ 
+                    splasher();
+                }, 1500);
+                document.getElementById('splash').classList.add('translator-splash');*/
+                splasher();
+            }, 1900);
+        });
+    </script>
+</body></html>

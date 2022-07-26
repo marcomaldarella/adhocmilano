@@ -51,6 +51,7 @@ body {
 .social-container {
     display:flex;
     flex-direction: row;
+    margin-bottom: 120px;
 }
 
 .hover-this {
@@ -82,6 +83,15 @@ body {
     top: 0px;
 }
 
+.about-logo {
+    width:180px;
+    margin:50px;
+    position: fixed;
+    display: table;
+    pointer-events: auto;
+    z-index: 10;
+    top: 0px;
+}
 
 
 
@@ -89,7 +99,6 @@ body {
 .your-personal {
     font-family: 'Brown-Bold';
     margin-top:60px;
-    margin-right:50px;
     position: fixed;
     pointer-events: auto;
     z-index: 10;
@@ -182,6 +191,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
+    height: 90vh;
+    justify-content: center;
 }
 
 .main-description {
@@ -193,7 +204,7 @@ body {
 }   
 
 .main-description .big {
-    font-size: 100px;
+    font-size: 4em;
     font-family: 'Brown-Light';
     line-height: 1em;
 }   
@@ -286,7 +297,6 @@ body {
 .top {
     width: 100%;
     text-align: center;
-    padding-top:40px;
     display: flex;
 }
 
@@ -321,10 +331,10 @@ body {
 
 
 .bottom {
-    bottom:0px;
+    bottom:30px;
     width: 100%;
+    position: fixed;
     text-align: center;
-    padding-bottom:40px;
 }
 
 .middle {
@@ -452,12 +462,17 @@ a:hover:after {
     }   
 }
 
+.four-four {
+    width: 98%;
+}
+
 
 @media only screen and (max-width: 800px) {
     .logo-mobile {
         z-index: 999;
         width: 60%;
         flex: 2;
+        position: fixed;
     }
 
     .background-header {
@@ -467,7 +482,7 @@ a:hover:after {
 
     .main-description .big {
         font-size: 40px;
-        font-family: 'Brown-Light';
+        font-family: 'Brown-Regular';
         line-height: 1em;
     } 
     
@@ -485,6 +500,7 @@ a:hover:after {
         line-height: 1.4em;
         text-align: left;
         word-break: break-word;
+        margin-top:-20px;
     }   
 
     .web_video{
@@ -527,10 +543,9 @@ a:hover:after {
     }
 
     .top {
-        padding-top:10px;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center
+        padding-top:20px;
+        flex-direction: row;
+        position: fixed;
     }
 
     .button-video {
@@ -539,30 +554,34 @@ a:hover:after {
         color:#073DA5;
         padding-bottom:40px;
         text-align: center;
-        font-size:42px;
+        font-size:50px;
         z-index: 50;
     }
 
     .logo {
-        width:180px;
-        padding:0px;
+        width:130px;
         padding-top:10px;
         position: relative;
         pointer-events: auto;
         z-index: 10;
         top: 0px;
+        padding-left:20px; 
+        padding-bottom:0px;
     }
+
 
     .white-logo{
         display: none;
     }
     
     .facebook-instagram{
-        display: none;
+        padding-left:20px;
+        padding-bottom:30px;
     }
 
     .mail { 
-    display: none;
+        padding-right:20px;
+        padding-bottom:30px;
     }
 
     .social-container {
@@ -586,9 +605,8 @@ a:hover:after {
 
     .your-personal {
         font-family: 'Brown-Bold';
-        margin-top:10px;
+        margin-top:30px;
         margin-right:0px;
-        position: relative;
         width:30vw;
     }
     
@@ -604,6 +622,18 @@ a:hover:after {
     .rotating-img {
         overflow-x: hidden;
         max-width: 100vw;
+    }
+
+    .bottom {
+        bottom:200px;
+        width: 100%;
+        position: fixed;
+        text-align: left;
+        padding-left:30px;
+    }
+
+    .sliding-p {
+        font-size:15px;
     }
 
 }

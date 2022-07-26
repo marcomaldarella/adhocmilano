@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'Brown-Bold';
+    src: url("../fonts/Brown-Bold.otf");
+    src: url("../fonts/Brown-Bold.otf") format("opentype"), url("Brown-Bold.woff2") format("woff2"), url("Brown-Bold.woff") format("woff"), url("Brown-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Brown-Light';
+    src: url("../fonts/Brown-Light.otf");
+    src: url("../fonts/Brown-Light.otf") format("opentype"), url("Brown-Light.woff2") format("woff2"), url("Brown-Light.woff") format("woff"), url("Brown-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Brown-Regular';
+    src: url("../fonts/Brown-Regular.otf");
+    src: url("../fonts/Brown-Regular.otf") format("opentype"), url("Brown-Regular.woff2") format("woff2"), url("Brown-Regular.woff") format("woff"), url("Brown-Regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Brown-Bold';
+}
+
+.top {
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.your-personal {
+    font-family: 'Brown-Bold';
+    margin-top:60px;
+    position: fixed;
+    pointer-events: auto;
+    z-index: 10;
+    top: 0px;
+    right: 0px;
+    overflow:hidden;
+    width:12vw;
+    white-space: nowrap;
+}
+
+.your-personal span  {
+    animation-name: sliding-text-right;
+    animation-duration: 7.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: block;
+}
+
+.facebook-instagram {
+    font-family: 'Brown-Bold';
+    padding-left:50px;
+    position: fixed;
+    display: table;
+    pointer-events: auto;
+    z-index: 10;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 40px;
+}
+
+
+
+.mail {
+    font-family: 'Brown-Bold';
+    padding-right:50px;
+    position: fixed;
+    display: table;
+    pointer-events: auto;
+    z-index: 10;
+    bottom: 0px;
+    right: 0px;
+    padding-bottom: 40px;
+}
+
+/*=========================================*/
+/*=======Start Header and Hero Section======*/
+/*=========================================*/
+.main-product-section {
+    margin-top: 120px;
+}
+
+.product-item {}
+
+.custom-padding {
+    padding-right: 15%;
+}
+
+.product-item-text {}
+
+.product-item-text .product-heading {
+    font-size: 42px;
+    line-height: 52px;
+    color: #073DA5;
+    font-weight: 400;
+    font-family: 'Brown-Regular';
+    line-height: 1em;
+}
+
+.product-item-text .product-details-text {
+    font-size: 18px;
+    line-height: 26px;
+    color: #073DA5;
+    font-weight: 400;
+    padding-bottom: 49px;
+    font-family: 'Brown-Regular';
+}
+
+.product-item-img {
+    text-align: right;
+}
+
+.product-item-img img {
+    height: auto;
+    width: 400px;
+}
+
+.product-img-two {
+    height: 300px;
+    width: 100%;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-img-three {
+    margin-right: 2%;
+}
+
+.product-img-four {
+    width: 90%;
+}
+
+.product-item-two {
+    padding-right: 15%;
+}
+
+.product-item-img .product-details-text {
+    font-size: 18px;
+    line-height: 26px;
+    color: #073DA5;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Brown-Regular';
+}
+
+.product-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-img img {
+    width: 50%;
+    text-align: right;
+}
+
+.second-item {
+    text-align: right;
+    padding-left: 15%;
+}
+
+.main-customer-images {
+    padding-top: 65px;
+}
+
+.img-item {}
+
+.img-item img {
+    width: 100%;
+}
+
+.last-img {
+    padding-top: 65px;
+}
+
+.last-img img {
+    width: 100%;
+    display: block;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Page Two Start--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.product-item-text .product-heading-two {
+    font-size: 59px;
+    line-height: 80px;
+    color: #073DA5;
+    font-weight: 400;
+    font-family: 'Brown-Regular';
+}
+
+.custom-product-size {
+    
+}
+
+.custom-margin {
+    margin-top: -200px;
+}
+
+.text-aling {
+    text-align: right;
+    padding-left: 18%;
+}
+
+.custom-margin-top {
+    margin-top: 125px;
+}
+
+.pc {
+    display: block;
+}
+
+.mobile {
+    display: none;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {}
+
+@media all and (max-width:991px) {
+    .custom-product-size {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .product-item-text .product-heading {
+        font-size: 35px;
+        line-height: 40px;
+        color: #073DA5;
+        font-weight: 400;
+    }
+
+    .product-item-text .product-details-text {
+        font-size: 12px;
+        line-height: 20px;
+        color: #073DA5;
+        font-weight: 400;
+        padding-bottom: 49px;
+    }
+
+    .product-item-img .product-details-text {
+        font-size: 12px;
+        line-height: 20px;
+        color: #073DA5;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .product-item-text .product-heading-two {
+        font-size: 35px;
+        line-height: 80px;
+    }
+
+    .product-img-three {
+        display: none;
+        margin-right: 0px;
+    }
+
+    .second-item {
+        padding-left: 12px;
+    }
+
+    .main-customer-images {
+        padding-top: 12px;
+    }
+
+    .last-img {
+        padding-top:12px;
+        padding-bottom:24px;
+    }
+
+    .top {
+        padding-top:20px;
+        flex-direction: row;
+    }
+}
+
+@media all and (max-width:768px) {}
+
+@media all and (max-width:576px) {}
+
+@media all and (max-width:480px) {}
+
+@media all and (max-width:400px) {}
+
+@media all and (max-width:375px) {}
+
+@media all and (max-width:320px) {}
+
+/*===========Responsive CSS End==========*/

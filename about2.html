@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it"></html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AdHoc Milano</title>
+        <meta name="theme-color" content="#073DA5">
+        <meta name="description" content="Un servizio sartoriale veloce ed innovativo. Direttamente a casa tua, o dovunque tu voglia.">
+        <meta name="keywords" content="Sartoria su misura Milano direttamente a casa tua">
+        <link rel="icon" type="image/png" href="src/favicon.png"/>
+        <meta property="og:image" content="https://adhocmilano.it/src/favicon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="src/favicon.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="src/favicon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="src/favicon.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="src/favicon.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="src/favicon.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="src/favicon.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="src/favicon.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="src/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="src/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="src/favicon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/favicon.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="src/favicon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/favicon.png">
+    </head>
+    <body>
+        <div>
+           <!-- 
+
+            <div class="main-description-container">
+                <div class="main-description">
+                        <p>
+                        Personalizzazione, cura dei dettagli, qualità, unicità. Al centro di AdHoc Milano ci sono l'impegno e la consapevolezza
+                        di rappresentare le regole non scritte del menswear in un modo contemporaneo e vicino a chi lo indossa,
+                        con ricercatezza e stile. Un formalwear contemporaneo che si evolve a total look. Fatto su misura per te, come sta bene a te. Un
+                        servizio eccellente: pratico, semplice e altamente professionale.</p>
+                        <p>
+                        Un'esperienza dedicata alle esigenze di chi vuole essere sempre impeccabile e ama custodire l&#39;unicità del proprio stile, comodamente
+                        da casa o in ufficio. Consigliamo i capi e gli outfit più adatti alla tua personalità, ciò che ti veste davvero bene, e lo produciamo. Lo
+                        sappiamo fare perché lo facciamo da sempre, conosciamo i tagli, i tessuti, e le tendenze:
+                        un ensemble di comfort, agio e vestibilità.
+                        </p>
+                        <p>
+                        AdHoc Milano è a portata di mano. Non rinunciare alla tua voglia di un capo su misura, ti garantiamo alta qualità
+                        al giusto prezzo e in circa 5 settimane potrai ricevere il tuo abito ovunque tu voglia.
+                        </p>
+                        <p class="big">
+                            Contattaci e richiedi il tuo appuntamento AdHoc.
+                        </p>
+                        <p class="social-container" style="margin-bottom: 100px;"><a href="https://wa.me/+393398654343" target="_blank">Whatsapp</a><a href="mailto:info@adhocmilano.it" class="social-link"  target="_blank">Mail</a> <a href="https://www.instagram.com/adhocmilano/" target="_blank" class="social-link">Instagram</a><a href="https://www.facebook.com/adhocmilano" target="_blank" class="social-link2">Facebook</a> </p>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <span class="sliding-span">
+                    <p class="sliding-p">©ADHOC Milano - Hosted by
+                        <a href="https://motelmilano.com/ " target="_blank">Motel Milano</a>
+                    </p>
+                </span>
+            </div>
+            -->
+       </div>
+       <script>
+
+            
+
+            function overlayer() { 
+                var x = window.matchMedia("(max-width: 768px)");
+                if (!x.matches) { // If media query matches
+                    Array.prototype.forEach.call(document.getElementsByClassName('change-color'), element => {
+                    element.classList.toggle('black-text');
+                    });
+                    Array.prototype.forEach.call(document.getElementsByClassName('logotohide'), element => {
+                        element.classList.toggle('hide');
+                    });
+                    document.getElementsByTagName('body')[0].classList.toggle('background-blue');
+                    document.getElementById('hero').classList.toggle('background-blue');
+                }           
+            }  
+
+        (function() {
+
+          const link = document.querySelectorAll('nav> .hover-this');
+
+          const allLinks = document.querySelectorAll('a');
+
+
+          const cursor = document.querySelector('.cursor');
+
+          const mouseHoverEffect = function(e) {
+              cursor.style.opacity = 0.3;
+              cursor.style.padding = '1.2em';
+          }
+          const mouseExitEffect = function(e) {
+            cursor.style.opacity = 1;
+            cursor.style.padding = '0.3em';
+          }
+
+            const animateit = function (e) {
+                const span = this.querySelector('span');
+                const { offsetX: x, offsetY: y } = e,
+                { offsetWidth: width, offsetHeight: height } = this,
+
+                move = 25,
+                xMove = x / width * (move * 2) - move,
+                yMove = y / height * (move * 2) - move;
+
+                span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+
+                if (e.type === 'mouseleave') span.style.transform = '';
+            };
+
+            const editCursor = e => {
+                    const { clientX: x, clientY: y } = e;
+                    cursor.style.left = x + 'px';
+                    cursor.style.top = y + 'px';
+            };
+
+            link.forEach(b => b.addEventListener('mousemove', animateit));
+            link.forEach(b => b.addEventListener('mouseleave', animateit));
+
+            allLinks.forEach(l => l.addEventListener('mouseenter', mouseHoverEffect))
+            allLinks.forEach(l => l.addEventListener('mouseleave', mouseExitEffect))
+
+            window.addEventListener('mousemove', editCursor);
+        })(); 
+        
+        function splasher() {
+            document.getElementById('splash').style.display = "none";
+            document.getElementById('restOfThePage').style.display = "block";
+        } 
+
+        window.addEventListener('load', (event) => {
+            setTimeout(function(){
+                /*setTimeout(function(){ 
+                    splasher();
+                }, 1500);
+                document.getElementById('splash').classList.add('translator-splash');*/
+                splasher();
+            }, 1900);
+        });
+    </script>
+    </body>
+
+</html>
+
+
