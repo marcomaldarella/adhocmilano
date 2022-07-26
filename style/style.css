@@ -540,6 +540,7 @@ a:hover:after {
     .top {
         padding-top:20px;
         flex-direction: row;
+        position: fixed;
     }
 
     .button-video {
@@ -627,7 +628,7 @@ a:hover:after {
     }
 
     .sliding-p {
-        font-size:32px;
+        font-size:15px;
     }
 
 }
