@@ -462,17 +462,12 @@ a:hover:after {
     }   
 }
 
-.four-four {
-    width: 98%;
-}
-
 
 @media only screen and (max-width: 800px) {
     .logo-mobile {
         z-index: 999;
         width: 60%;
         flex: 2;
-        position: fixed;
     }
 
     .background-header {
@@ -482,7 +477,7 @@ a:hover:after {
 
     .main-description .big {
         font-size: 40px;
-        font-family: 'Brown-Regular';
+        font-family: 'Brown-Light';
         line-height: 1em;
     } 
     
@@ -545,7 +540,6 @@ a:hover:after {
     .top {
         padding-top:20px;
         flex-direction: row;
-        position: fixed;
     }
 
     .button-video {
@@ -633,7 +627,7 @@ a:hover:after {
     }
 
     .sliding-p {
-        font-size:15px;
+        font-size:32px;
     }
 
 }
