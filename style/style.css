@@ -553,7 +553,7 @@ a:hover:after {
     }
 
     .button-video {
-        margin-top:58vh;
+        margin-top:60vh;
         width: 100%;
         color:#073DA5;
         padding-bottom:40px;
@@ -638,12 +638,21 @@ a:hover:after {
 
     .sliding-p {
         font-size: 26px;
-        margin-top:5px;
     }
 
     .sliding-p-2 {
         padding-top:20px;
         font-size:15px;
+    }
+
+    .container{
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        max-width: 100vw;
+        max-height: 100vh;
     }
 
 }
