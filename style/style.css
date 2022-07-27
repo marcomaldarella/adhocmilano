@@ -21,7 +21,7 @@ html{
 
 body{ 
     overflow:auto;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     height:100%;
 }
 
@@ -533,7 +533,7 @@ a:hover:after {
     }
 
     .logo-rotante{
-        width: 77%;
+        width: 72%;
 
     }
 
@@ -638,6 +638,7 @@ a:hover:after {
 
     .sliding-p {
         font-size: 26px;
+        margin-top:5px;
     }
 
     .sliding-p-2 {
