@@ -533,7 +533,7 @@ a:hover:after {
     }
 
     .logo-rotante{
-        width: 80%;
+        width: 77%;
 
     }
 
@@ -637,10 +637,11 @@ a:hover:after {
     }
 
     .sliding-p {
-        font-size:30px;
+        font-size: 26px;
     }
 
     .sliding-p-2 {
+        padding-top:20px;
         font-size:15px;
     }
 
